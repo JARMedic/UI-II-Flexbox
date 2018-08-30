@@ -42,6 +42,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -65,6 +66,12 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+.container {
+  margin: 0 auto;
+  width: 880px;
+}
+
+
 
 .head {
   /* border: solid red 2px; */
@@ -79,6 +86,16 @@ h1, h2, h3, h4, h5 {
   justify-content: space-between;
   width: 600px;
   padding-top: 15px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: slategrey;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .services-header-img {
@@ -88,7 +105,7 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
-  width: 1000px;
+  
 }
 
 
@@ -101,52 +118,102 @@ h1, h2, h3, h4, h5 {
 
 .prologue h1 {
   font-size: 35px;
-  padding-left: 125px;
+  
 }
 
 .prologue p {
   /* border: solid red 2px; */
   display: flex;
-  width: 1000px;
-  margin-left: 125px;
+  
+  
   padding-bottom: 25px;
 }
 
-.row1 {
-  /* border: solid red 2px; */
+section.main-content .row1{
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  padding: 35px;
+  justify-content: center;
+}
+
+section.main-content .row1 .div1 {
+  border: solid black 1px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+section.main-content .row1 .div1:first-child {
+  margin-right: 30px;
+}
+
+
+section.main-content .row2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
   
 }
 
-.row1 h2 {
-  display: flex;
-  margin-left: 100px;
+section.main-content .row2 .div2 {
+  border: solid black 1px;
+  padding: 25px;
+  margin-bottom: 25px;
 }
 
-.row2 {
-  /* border: solid red 2px; */
+section.main-content .row2 .div2:first-child {
+  margin-right: 30px;
+}
+
+section.main-content .row3{
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  padding: 35px;
+  justify-content: center;
   
 }
 
-.row2 h2 {
-  display: flex;
-  margin-left: 100px;
+section.main-content .row3 .div3 {
+  border: solid black 1px;
+  padding: 25px;
+  margin-bottom: 25px;
 }
 
-.row3 {
-  /* border: solid red 2px; */
-  display: flex;
-  justify-content: space-around;
-  padding: 35px;
-  
+section.main-content .row3 .div3:first-child {
+  margin-right: 30px;
 }
 
-.row3 h2 {
+button {
+  background: white;
+  vertical-align: top;
+  margin-top: 20px;
+  padding: 8px 36px;
+  font-size: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+section.bottom-content {
   display: flex;
-  margin-left: 100px;
+  padding-top: 35px;
+  border-top: solid black 1px;
+}
+
+section.bottom-content .bottom p{
+  margin-right: 40px;
+}
+
+section.bottom-content .bottom ul{
+  padding-top: 25px;
+  padding-left: 25px;
+  list-style-type: disc;
+}
+
+footer {
+  margin: 32px 0;
+  text-align: center;
+  font-size: 14px;
 }
