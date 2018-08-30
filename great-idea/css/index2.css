@@ -67,99 +67,86 @@ h1, h2, h3, h4, h5 {
 
 
 .head {
+  /* border: solid red 2px; */
   display: flex;
   justify-content: space-around;
+  margin-top: 15px;
 }
 
-.nav {
+.head .nav {
+  /* border: solid red 2px; */
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
-  vertical-align: top;
-  margin-top: 25px;
-  width: 800px;
-  font-size: 14px;
-  color: gray;
-  text-decoration: none;
+  width: 600px;
+  padding-top: 15px;
 }
 
-header nav a:hover {
-  text-decoration: underline;
+.services-header-img {
+  /* border: solid red 2px; */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 1000px;
 }
 
-.main-content {
+
+.prologue {
+  /* border: solid red 2px; */
   display: flex;
   flex-direction: column;
 }
 
-.cta .cta-text {
+
+.prologue h1 {
+  font-size: 35px;
+  padding-left: 125px;
+}
+
+.prologue p {
+  /* border: solid red 2px; */
   display: flex;
-  font-size: 85px;
-  margin-top: 100px;
-  text-align: center;
-  padding: 0px 75px;
-  flex-direction: row;
-  justify-content: space-around;
+  width: 1000px;
+  margin-left: 125px;
+  padding-bottom: 25px;
 }
 
-
-.cta .cta-text button {
-  height: 50px;
-  position: absolute;
-  top: 400px;
-  right: 830px;
-  background: white;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-  margin-top: 6px;
-  padding: 8px 44px;
-}
-
-.cta .cta-text button:hover {
-  background: black;
-  color: white;
-}
-
-
-.top-content {
+.row1 {
+  /* border: solid red 2px; */
   display: flex;
-  align-items: flex-start;
   justify-content: space-around;
-}
-
-.top-content .text-content {
-  width: 410px;
-}
-
-.middle-img {
-  padding: 50px;
+  padding: 35px;
   
 }
 
-.bottom-content {
+.row1 h2 {
   display: flex;
+  margin-left: 100px;
+}
+
+.row2 {
+  /* border: solid red 2px; */
+  display: flex;
+  justify-content: space-around;
+  padding: 35px;
   
 }
 
-.text-content {
-  /* border: solid red; */
+.row2 h2 {
+  display: flex;
+  margin-left: 100px;
+}
+
+.row3 {
+  /* border: solid red 2px; */
+  display: flex;
   justify-content: space-around;
-  padding: 25px;
+  padding: 35px;
+  
 }
 
-.contact {
-  margin-top: 57px;
-  border-top: 1px solid black;
-  padding: 39px 10px 0;
-}
-
-.contact p {
-  margin: 20px 0;
-}
-
-footer {
-  margin: 32px 0;
-  text-align: center;
-  font-size: 14px;
+.row3 h2 {
+  display: flex;
+  margin-left: 100px;
 }
